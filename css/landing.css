@@ -28,11 +28,11 @@
 }
 
 .split__side--left {
-  background: linear-gradient(160deg, #1B2A4A 0%, #0F1B33 100%);
+  background: linear-gradient(160deg, #1A3C34 0%, #0F2922 100%);
 }
 
 .split__side--right {
-  background: linear-gradient(160deg, #253760 0%, #1B2A4A 100%);
+  background: linear-gradient(160deg, #245248 0%, #1A3C34 100%);
 }
 
 .split__overlay {

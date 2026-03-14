@@ -6,13 +6,13 @@
     </linearGradient>
   </defs>
   <!-- Icon: P stylisé avec onde/pulse -->
-  <circle cx="22" cy="26" r="21" fill="#1B2A4A"/>
+  <circle cx="22" cy="26" r="21" fill="#1A3C34"/>
   <path d="M14 36V16h6c4.5 0 7 2.2 7 5.8s-2.5 5.8-7 5.8h-3" stroke="url(#grad)" stroke-width="2.8" stroke-linecap="round" fill="none"/>
   <path d="M32 20c2 1.5 3.5 3.5 3.5 6s-1.5 4.5-3.5 6" stroke="#C8A45A" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
   <path d="M36 17c2.5 2 4.5 5 4.5 9s-2 7-4.5 9" stroke="#C8A45A" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.25"/>
   <!-- Wordmark -->
   <text x="54" y="35" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="-0.5">
-    <tspan fill="#1B2A4A">paie</tspan><tspan fill="#C8A45A" font-weight="900">neo</tspan>
+    <tspan fill="#1A3C34">paie</tspan><tspan fill="#C8A45A" font-weight="900">neo</tspan>
   </text>
   <!-- Point -->
   <circle cx="197" cy="34" r="3" fill="#C8A45A"/>

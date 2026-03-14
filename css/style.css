@@ -1,17 +1,17 @@
 /* ===== PaieNeo — Charte graphique ===== */
 :root {
-  --primary: #1B2A4A;
-  --primary-light: #253760;
+  --primary: #1A3C34;
+  --primary-light: #245248;
   --accent: #C8A45A;
   --accent-light: #D4B06A;
-  --bg: #FAFAFA;
-  --bg-alt: #F0F2F5;
+  --bg: #FAFAF8;
+  --bg-alt: #F0F3F1;
   --text: #2D2D2D;
   --text-light: #6B7280;
   --white: #FFFFFF;
   --radius: 12px;
-  --shadow: 0 4px 24px rgba(27, 42, 74, 0.08);
-  --shadow-lg: 0 12px 40px rgba(27, 42, 74, 0.12);
+  --shadow: 0 4px 24px rgba(26, 60, 52, 0.08);
+  --shadow-lg: 0 12px 40px rgba(26, 60, 52, 0.12);
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -66,7 +66,7 @@ img, svg {
   z-index: 1000;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(27, 42, 74, 0.06);
+  border-bottom: 1px solid rgba(26, 60, 52, 0.06);
   transition: var(--transition);
 }
 
@@ -147,7 +147,7 @@ img, svg {
 .nav__cta:hover {
   background: var(--primary-light);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(27, 42, 74, 0.2);
+  box-shadow: 0 4px 12px rgba(26, 60, 52, 0.2);
 }
 
 /* Mobile menu */
@@ -198,7 +198,7 @@ img, svg {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(27, 42, 74, 0.06);
+  background: rgba(26, 60, 52, 0.06);
   color: var(--primary);
   padding: 8px 16px;
   border-radius: 50px;
@@ -256,25 +256,25 @@ img, svg {
 .btn--primary:hover {
   background: var(--primary-light);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(27, 42, 74, 0.25);
+  box-shadow: 0 6px 20px rgba(26, 60, 52, 0.25);
 }
 
 .btn--outline {
   background: transparent;
   color: var(--primary);
-  border: 2px solid rgba(27, 42, 74, 0.15);
+  border: 2px solid rgba(26, 60, 52, 0.15);
 }
 
 .btn--outline:hover {
   border-color: var(--primary);
-  background: rgba(27, 42, 74, 0.03);
+  background: rgba(26, 60, 52, 0.03);
 }
 
 /* ===== Stats bar ===== */
 .stats {
   padding: 48px 0;
   background: var(--white);
-  border-bottom: 1px solid rgba(27, 42, 74, 0.06);
+  border-bottom: 1px solid rgba(26, 60, 52, 0.06);
 }
 
 .stats__grid {
@@ -345,7 +345,7 @@ img, svg {
   background: var(--white);
   border-radius: var(--radius);
   padding: 36px;
-  border: 1px solid rgba(27, 42, 74, 0.06);
+  border: 1px solid rgba(26, 60, 52, 0.06);
   transition: var(--transition);
   position: relative;
   overflow: hidden;
@@ -376,7 +376,7 @@ img, svg {
   width: 52px;
   height: 52px;
   border-radius: 12px;
-  background: rgba(27, 42, 74, 0.05);
+  background: rgba(26, 60, 52, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -464,7 +464,7 @@ img, svg {
   background: var(--white);
   border-radius: var(--radius);
   padding: 36px;
-  border: 1px solid rgba(27, 42, 74, 0.06);
+  border: 1px solid rgba(26, 60, 52, 0.06);
   transition: var(--transition);
 }
 
@@ -814,7 +814,7 @@ img, svg {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 2px solid rgba(27, 42, 74, 0.15);
+  border: 2px solid rgba(26, 60, 52, 0.15);
   background: var(--white);
   color: var(--primary);
   display: flex;
@@ -839,7 +839,7 @@ img, svg {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: rgba(27, 42, 74, 0.15);
+  background: rgba(26, 60, 52, 0.15);
   border: none;
   cursor: pointer;
   transition: var(--transition);
@@ -967,7 +967,7 @@ img, svg {
   padding: 40px 28px;
   background: var(--white);
   border-radius: var(--radius);
-  border: 1px solid rgba(27, 42, 74, 0.06);
+  border: 1px solid rgba(26, 60, 52, 0.06);
   transition: var(--transition);
 }
 
@@ -1034,7 +1034,7 @@ img, svg {
   width: 44px;
   height: 44px;
   border-radius: 10px;
-  background: rgba(27, 42, 74, 0.05);
+  background: rgba(26, 60, 52, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1070,7 +1070,7 @@ img, svg {
 .form__select {
   width: 100%;
   padding: 12px 16px;
-  border: 1.5px solid rgba(27, 42, 74, 0.12);
+  border: 1.5px solid rgba(26, 60, 52, 0.12);
   border-radius: 8px;
   font-family: inherit;
   font-size: 0.92rem;
@@ -1124,7 +1124,7 @@ img, svg {
 .form__submit:hover {
   background: var(--primary-light);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(27, 42, 74, 0.2);
+  box-shadow: 0 4px 12px rgba(26, 60, 52, 0.2);
 }
 
 /* ===== Footer ===== */
