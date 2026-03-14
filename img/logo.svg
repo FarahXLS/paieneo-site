@@ -14,6 +14,4 @@
   <text x="54" y="35" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="-0.5">
     <tspan fill="#1A3C34">paie</tspan><tspan fill="#C8A45A" font-weight="900">neo</tspan>
   </text>
-  <!-- Point -->
-  <circle cx="197" cy="34" r="3" fill="#C8A45A"/>
 </svg>
