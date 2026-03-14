@@ -1,16 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 52" fill="none">
   <defs>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#C8A45A"/>
       <stop offset="100%" style="stop-color:#D4B06A"/>
     </linearGradient>
   </defs>
-  <!-- Icon: abstract shield/check representing trust & payroll -->
-  <rect x="0" y="8" width="44" height="44" rx="10" fill="#1B2A4A"/>
-  <path d="M14 30 L20 36 L32 22" stroke="url(#accent)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Icon: P stylisé avec onde/pulse -->
+  <circle cx="22" cy="26" r="21" fill="#1B2A4A"/>
+  <path d="M14 36V16h6c4.5 0 7 2.2 7 5.8s-2.5 5.8-7 5.8h-3" stroke="url(#grad)" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+  <path d="M32 20c2 1.5 3.5 3.5 3.5 6s-1.5 4.5-3.5 6" stroke="#C8A45A" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <path d="M36 17c2.5 2 4.5 5 4.5 9s-2 7-4.5 9" stroke="#C8A45A" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.25"/>
   <!-- Wordmark -->
-  <text x="56" y="41" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700" fill="#1B2A4A" letter-spacing="-0.5">Paie</text>
-  <text x="56" y="41" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700" fill="#1B2A4A" letter-spacing="-0.5">
-    <tspan fill="#1B2A4A">Paie</tspan><tspan fill="#C8A45A">Neo</tspan>
+  <text x="54" y="35" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="-0.5">
+    <tspan fill="#1B2A4A">paie</tspan><tspan fill="#C8A45A" font-weight="900">neo</tspan>
   </text>
+  <!-- Point -->
+  <circle cx="197" cy="34" r="3" fill="#C8A45A"/>
 </svg>
