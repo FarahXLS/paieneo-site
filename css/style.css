@@ -1153,9 +1153,16 @@ img, svg {
   filter: brightness(0) invert(1);
 }
 
-.footer__logo-accent {
-  height: 32px;
+.footer__logo-text {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--white);
   margin-bottom: 14px;
+  letter-spacing: -0.5px;
+}
+
+.footer__logo-accent {
+  color: var(--accent);
 }
 
 .footer__desc {
