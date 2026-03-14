@@ -121,71 +121,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-  // --- Contact form ---
-  const form = document.getElementById('contactForm');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
+  // --- Contact forms are now handled by FormSubmit (server-side) ---
+  // No JS interception needed — forms submit directly via POST
 
-      const data = new FormData(form);
-      const name = data.get('name');
-
-      // Build mailto link as fallback (can be replaced with a real backend later)
-      const subject = encodeURIComponent(`Demande de contact — ${data.get('service')}`);
-      const body = encodeURIComponent(
-        `Nom : ${data.get('name')}\n` +
-        `Email : ${data.get('email')}\n` +
-        `Entreprise : ${data.get('company')}\n` +
-        `Service : ${data.get('service')}\n\n` +
-        `Message :\n${data.get('message')}`
-      );
-
-      window.location.href = `mailto:contact@paieneo.com?subject=${subject}&body=${body}`;
-
-      // Show confirmation
-      const btn = form.querySelector('.form__submit');
-      const originalText = btn.textContent;
-      btn.textContent = 'Message envoy\u00e9 !';
-      btn.style.background = '#22c55e';
-
-      setTimeout(() => {
-        btn.textContent = originalText;
-        btn.style.background = '';
-        form.reset();
-      }, 3000);
-    });
-  }
-
-  // --- Transition contact form ---
-  const transitionForm = document.getElementById('transitionForm');
-  if (transitionForm) {
-    transitionForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const data = new FormData(transitionForm);
-      const subject = encodeURIComponent(`Renfort imm\u00e9diat — ${data.get('context')}`);
-      const body = encodeURIComponent(
-        `Nom : ${data.get('name')}\n` +
-        `Email : ${data.get('email')}\n` +
-        `Entreprise : ${data.get('company')}\n` +
-        `Effectif : ${data.get('effectif')}\n` +
-        `Contexte : ${data.get('context')}\n\n` +
-        `Situation :\n${data.get('message')}`
-      );
-      window.location.href = `mailto:contact@paieneo.com?subject=${subject}&body=${body}`;
-
-      const btn = transitionForm.querySelector('.form__submit--urgent');
-      const originalText = btn.textContent;
-      btn.textContent = 'Demande envoy\u00e9e !';
-      btn.style.background = '#22c55e';
-      btn.style.color = '#fff';
-      setTimeout(() => {
-        btn.textContent = originalText;
-        btn.style.background = '';
-        btn.style.color = '';
-        transitionForm.reset();
-      }, 3000);
-    });
-  }
 
   // --- Animated counters ---
   function animateCounter(el) {

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merci — PaieNeo</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .merci {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(160deg, var(--primary) 0%, #0F2922 100%);
+      text-align: center;
+      padding: 40px 24px;
+    }
+    .merci__content {
+      max-width: 480px;
+    }
+    .merci__icon {
+      font-size: 3rem;
+      margin-bottom: 24px;
+    }
+    .merci__title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .merci__text {
+      font-size: 1.05rem;
+      color: rgba(255, 255, 255, 0.65);
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .merci__btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      background: var(--accent);
+      color: var(--primary);
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    .merci__btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(200, 164, 90, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="merci">
+    <div class="merci__content">
+      <div class="merci__icon">&#9989;</div>
+      <h1 class="merci__title">Message envoy&eacute;&nbsp;!</h1>
+      <p class="merci__text">
+        Merci pour votre message. Je vous r&eacute;ponds sous 24h.
+        En attendant, n'h&eacute;sitez pas &agrave; parcourir le site.
+      </p>
+      <a href="index.html" class="merci__btn">
+        Retour &agrave; l'accueil
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
