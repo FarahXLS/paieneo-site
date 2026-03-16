@@ -254,7 +254,7 @@
 /* Contexts */
 .fl-contexts {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -292,6 +292,85 @@
   color: var(--text-light);
 }
 
+/* Missions clés */
+.fl-missions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.fl-mission {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(26, 60, 52, 0.06);
+  transition: var(--transition);
+}
+
+.fl-mission:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.fl-mission__header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  padding: 20px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fl-mission__type {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.fl-mission__ccn {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 50px;
+  background: rgba(200, 164, 90, 0.2);
+  color: var(--accent);
+  border: 1px solid rgba(200, 164, 90, 0.3);
+}
+
+.fl-mission__body {
+  padding: 28px;
+}
+
+.fl-mission__context {
+  font-size: 0.92rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.fl-mission__achievements {
+  list-style: none;
+}
+
+.fl-mission__achievements li {
+  padding: 5px 0;
+  font-size: 0.88rem;
+  color: var(--text);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.fl-mission__achievements li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  min-width: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-top: 7px;
+}
+
 /* Responsive */
 @media (max-width: 968px) {
   .fl-impact__grid {
@@ -307,7 +386,10 @@
     grid-template-columns: 1fr;
   }
   .fl-contexts {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .fl-missions {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -323,6 +405,21 @@
     font-size: 1.6rem;
   }
   .fl-contexts {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fl-mission__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 16px 20px;
+  }
+  .fl-mission__body {
+    padding: 20px;
+  }
+  .fl-mission__context {
+    font-size: 0.85rem;
+  }
+  .fl-mission__achievements li {
+    font-size: 0.82rem;
   }
 }
