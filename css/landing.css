@@ -1,7 +1,6 @@
 /* ===== Landing Split Page ===== */
 .landing-page {
-  overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
     background: var(--primary);
